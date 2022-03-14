@@ -122,3 +122,25 @@ python tools/dist_test.py \
         --testset --gpus 1
 ```
 
+## Turn on classification module on WAYMO dataset :
+To turn on classification module add classification flag.
+
+Example for validation on WAYMO:
+```bash
+python tools/dist_test.py \
+/home/josh/workspace/RVCDet/configs/waymo/pp/waymo_rvdet_pp_two_pfn_stride1_3x.py \
+        --work_dir waymo_exp/rvdet-pp-dyn \
+        --checkpoint waymo_exp/rvdet-pp-dyn/latset.pth  \
+        --speed_test \
+        --gpus 1 --classification
+```
+Example for testing on WAYMO: 
+```bash
+python tools/dist_test.py \
+/home/josh/workspace/RVCDet/configs/waymo/pp/waymo_rvdet_pp_two_pfn_stride1_3x.py \
+        --work_dir waymo_exp/rvdet-pp-dyn \
+        --checkpoint waymo_exp/rvdet-pp-dyn/latset.pth  \
+        --speed_test \
+        --testset --gpus 1 --classification
+```
+

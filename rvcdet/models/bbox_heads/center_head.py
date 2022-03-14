@@ -445,7 +445,7 @@ class CenterHead(nn.Module):
             ret['metadata'] = metas[0][i]
             ret_list.append(ret)
 
-        return ret_list 
+        return ret_list, preds_dicts
 
     @torch.no_grad()
     def post_processing(self, batch_box_preds, batch_hm, test_cfg, post_center_range, task_id):
