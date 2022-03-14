@@ -1,5 +1,5 @@
 # RVCDet: Rethinking Voxelization and Classification for 3D Object Detection
-![img|center](./demo.GIF)
+![img|center](./demo.gif)
 
 ## Installation:
 ### After cloning the repository :
